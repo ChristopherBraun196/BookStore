@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    
+}
+
+@font-face {
+    font-family: "ZalandoSansExpanded";
+    src: url(./assets/fonts/Zalando_Sans/static/ZalandoSansExpanded-MediumItalic.ttf);
+}
+header {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "ZalandoSansExpanded";
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(181, 181, 187, 0.2);
+    
+}
+.header-Img{
+    max-width: 80px;
+    max-height: 80px;
+    padding-right: 16px;
+}
