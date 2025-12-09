@@ -7,6 +7,7 @@ let books = [
       "price": 19.99,
       "publishedYear": 2018,
       "genre": "Fantasy",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "Leser123",
@@ -38,6 +39,7 @@ let books = [
       "price": 14.50,
       "publishedYear": 2021,
       "genre": "Fantasy",
+      "image": "./img/logo/book.png",
       "comments": []
     },
     {
@@ -48,6 +50,7 @@ let books = [
       "price": 22.95,
       "publishedYear": 2019,
       "genre": "Romantik",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "LeserPeter",
@@ -79,6 +82,7 @@ let books = [
       "price": 18.00,
       "publishedYear": 2020,
       "genre": "Science-Fiction",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "BuchKenner",
@@ -98,6 +102,7 @@ let books = [
       "price": 16.75,
       "publishedYear": 2017,
       "genre": "Fantasy",
+      "image": "./img/logo/book.png",
       "comments": []
     },
     {
@@ -108,6 +113,7 @@ let books = [
       "price": 12.30,
       "publishedYear": 2022,
       "genre": "Science-Fiction",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "BücherLiebhaber",
@@ -127,6 +133,7 @@ let books = [
       "price": 21.00,
       "publishedYear": 2015,
       "genre": "Science-Fiction",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "Leser123",
@@ -142,6 +149,7 @@ let books = [
       "price": 17.50,
       "publishedYear": 2020,
       "genre": "Fantasy",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "Bookworm92",
@@ -157,6 +165,7 @@ let books = [
       "price": 19.99,
       "publishedYear": 2016,
       "genre": "Romantik",
+      "image": "./img/logo/book.png",
       "comments": [
         {
           "name": "Bibliophile23",
