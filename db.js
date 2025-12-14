@@ -1,5 +1,6 @@
 let books = [
     {
+      "id": 0,
       "name": "Die Geheimnisse des Ozeans",
       "author": "Clara Meer",
       "likes": 1250,
@@ -32,6 +33,7 @@ let books = [
       ]
     },
     {
+      "id": 1,
       "name": "Der vergessene Pfad",
       "author": "Maximilian Schwarz",
       "likes": 980,
@@ -43,6 +45,7 @@ let books = [
       "comments": []
     },
     {
+      "id": 2,
       "name": "Die Farben des Himmels",
       "author": "Laura Blau",
       "likes": 1520,
@@ -75,6 +78,7 @@ let books = [
       ]
     },
     {
+      "id": 3,
       "name": "Das Rätsel der Zeit",
       "author": "Alexander Weiss",
       "likes": 750,
@@ -95,6 +99,7 @@ let books = [
       ]
     },
     {
+      "id": 4,
       "name": "Der letzte Wächter",
       "author": "Sabine Grün",
       "likes": 1300,
@@ -106,6 +111,7 @@ let books = [
       "comments": []
     },
     {
+      "id": 5,
       "name": "Im Schatten des Mondes",
       "author": "Philipp Silber",
       "likes": 890,
@@ -126,6 +132,7 @@ let books = [
       ]
     },
     {
+      "id": 6,
       "name": "Jenseits der Sterne",
       "author": "Oliver Schwarz",
       "likes": 1450,
@@ -142,6 +149,7 @@ let books = [
       ]
     },
     {
+      "id": 7,
       "name": "Das verborgene Königreich",
       "author": "Elena Gold",
       "likes": 920,
@@ -158,6 +166,7 @@ let books = [
       ]
     },
     {
+      "id": 8,
       "name": "Liebe in Zeiten des Krieges",
       "author": "Emilia Rot",
       "likes": 1800,
