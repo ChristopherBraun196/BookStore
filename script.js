@@ -24,5 +24,25 @@ function toggleLike(bookId) {
   renderBooks();
 }
 
+function addComment(bookId, button) {
+  const book = books.find(b => b.id === bookId);
+  if (!book) return;
+
+  const input = button
+    .closest(".input-comments")
+    .querySelector(".comment-input");
+
+  const text = input.value.trim();
+  if (text === "") return;
+
+  book.comments.push({
+    name: "Gast",
+    comment: text
+  });
+
+  input.value = "";
+  renderBooks();
+}
+
 
 // console.log(books);

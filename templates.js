@@ -48,7 +48,9 @@ function bookTemplate(book) {
           placeholder="Schreibe deinen Kommentar!"
         />
 
-          <button class="button-comments" type="button" aria-label="Kommentar senden">
+          <button onclick="addComment(${
+            book.id
+          },this)"class="button-comments" type="button" aria-label="Kommentar senden">
             <img src="./img/logo/commentButton.png" alt="" />
           </button>
         </section>
@@ -60,7 +62,11 @@ function bookTemplate(book) {
 
 function renderComments(comments) {
   if (!comments || comments.length === 0) {
-    return ` <p class ="no-comments">Keine Kommentare vorhanden. </p>`;
+    return ` 
+      <div class="comments-list">
+       <p class ="no-comments">Keine Kommentare vorhanden. </p>
+      </div>
+    `;
   }
 
   let html = `<div class="comments">`;
@@ -76,4 +82,3 @@ function renderComments(comments) {
   html += `</div>`;
   return html;
 }
-
