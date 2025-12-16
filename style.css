@@ -87,6 +87,17 @@ header {
   margin: 12px auto 8px;
 }
 
+.book-comments{
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.comments {
+  font-family: "ZalandoSansExpanded";
+  font-size: 12px;
+  padding: 4px;
+}
+
 .book-content {
   padding: 0 16px;
 }
@@ -162,13 +173,13 @@ header {
   gap: 8px;
   align-items: center;
   margin-top: 10px;
-  
 }
 
 .comment-input{
   flex: 1;
   padding: 8px 10px;
   border-radius: 24px;
+  border-color:rgb(181, 181, 187, 0.2)
 }
 
 .button-comments{
@@ -181,9 +192,17 @@ header {
 .button-comments img{
   width: 28px;
   height: 28px;
-  display: block;
+  display: block; 
 }
 
 .button-comments:hover{
   transform: scale(1.2);
+}
+
+.no-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  text-align: center; 
 }
