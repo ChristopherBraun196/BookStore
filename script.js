@@ -10,6 +10,7 @@ function renderBooks() {
   bookList.innerHTML = html;
 }
 renderBooks();
+
 function toggleLike(bookId) {
   const book = books.find((b) => b.id === bookId);
 
@@ -23,4 +24,5 @@ function toggleLike(bookId) {
   renderBooks();
 }
 
-console.log(books);
+
+// console.log(books);

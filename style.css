@@ -7,6 +7,10 @@
   src: url(./assets/fonts/Zalando_Sans/static/ZalandoSansExpanded-MediumItalic.ttf);
 }
 
+main {
+  margin-inline: 30px;
+}
+
 h2 {
   font-size: 14px;
   
@@ -102,28 +106,29 @@ header {
 
 
 .meta {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .meta-row {
   display: grid;
-  grid-template-columns: 120px 1fr; /* links feste Breite, rechts flexibel */
-  column-gap: 24px;                /* Abstand zwischen links und rechts */
+  grid-template-columns: 120px 1fr;
+  column-gap: 12px;
   align-items: baseline;
+  justify-items: end;
 }
 
 .meta-label {
-  text-align: right;               /* so wie auf deinem Bild */
+  text-align: right;
   font-weight: 600;
 }
 
 .meta-value {
-  text-align: left;                /* Werte linksbündig */
+  text-align: left;
 }
 
 .book-price {
   display: inline-block;
-  margin: 14px auto 0;
+  margin: 14px auto 12px;
   padding: 6px 14px;
   border-radius: 999px;
   background: #e8f7ee;
@@ -140,14 +145,45 @@ header {
 .heart {
   cursor: pointer;
   font-size: 36px;
-  color: #aaa;          /* leer */
+  color: #aaa;
   transition: transform 0.15s ease, color 0.15s ease;
 }
 
 .heart.liked {
-  color: #e63946;       /* rot */
+  color: #e63946;
 }
 
 .heart:hover {
+  transform: scale(1.2);
+}
+
+.input-comments{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+  
+}
+
+.comment-input{
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 24px;
+}
+
+.button-comments{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button-comments img{
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.button-comments:hover{
   transform: scale(1.2);
 }
