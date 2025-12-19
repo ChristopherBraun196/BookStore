@@ -1,6 +1,4 @@
-function bookTemplate(book) {
-  const imageSrc = book.image || "./img/logo/book.png";
-
+function bookTemplate(book, imageSrc) {
   return `
     <article class="book-card">
       <img class="book-cover" src="${imageSrc}" alt="Cover von ${book.name}">

@@ -11,7 +11,9 @@ function renderBooks() {
 
   for (let i = 0; i < books.length; i++) {
     const book = books[i];
-    html += bookTemplate(book);
+    const imageSrc = book.image || "./img/logo/book.png";
+    html += bookTemplate(book, imageSrc);
+    
   }
   bookList.innerHTML = html;
 }
@@ -34,6 +36,7 @@ function toggleLike(bookId) {
 
 function addComment(bookId, button) {
   const book = books.find((b) => b.id === bookId);
+  
 
   const input = button
     .closest(".input-comments")
