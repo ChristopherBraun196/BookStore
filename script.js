@@ -1,4 +1,10 @@
 const bookList = document.getElementById("bookList");
+const STORAGE_KEY = "bookStoreData"
+
+function init(){
+  loadFromLocalStorage();
+  renderBooks();
+}
 
 function renderBooks() {
   let html = "";
@@ -9,7 +15,7 @@ function renderBooks() {
   }
   bookList.innerHTML = html;
 }
-renderBooks();
+
 
 function toggleLike(bookId) {
   const book = books.find((b) => b.id === bookId);
@@ -21,12 +27,13 @@ function toggleLike(bookId) {
     book.likes++;
     book.liked = true;
   }
-  renderBooks();
+
+  saveToLocalStorage();
+  renderBooks();  
 }
 
 function addComment(bookId, button) {
-  const book = books.find(b => b.id === bookId);
-  if (!book) return;
+  const book = books.find((b) => b.id === bookId);
 
   const input = button
     .closest(".input-comments")
@@ -37,12 +44,25 @@ function addComment(bookId, button) {
 
   book.comments.push({
     name: "Gast",
-    comment: text
+    comment: text,
   });
 
   input.value = "";
   renderBooks();
+  saveToLocalStorage();
 }
 
+function saveToLocalStorage() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
 
-// console.log(books);
+}
+
+function loadFromLocalStorage() {
+  const stored = localStorage.getItem(STORAGE_KEY);
+
+  if (!stored) {
+    return;
+  }
+
+ books = JSON.parse(stored);
+}
