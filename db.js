@@ -11,6 +11,7 @@ let books = [
       "image": "./img/logo/book.png",
       "comments": [
         {
+          
           "name": "Leser123",
           "comment": "Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat."
         },
