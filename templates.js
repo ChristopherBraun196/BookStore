@@ -25,7 +25,7 @@ function bookTemplate(book, imageSrc) {
             <span class="meta-value">
               <span class="heart ${
                 book.liked ? "liked" : ""
-              }" onclick="toggleLike(${book.id})">♥</span>
+              }" onclick="toggleLike(${book.id})">&#9825;</span>
               <span class="like-count">${book.likes}</span>
             </span>
           </div>
